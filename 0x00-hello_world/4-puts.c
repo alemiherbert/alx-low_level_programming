@@ -2,7 +2,8 @@
 
 
 /**
- * This is the entry point into our program
+ * main - this is the entry point into our program.
+ * Return: Returns an integer, 0 if no errors occured.
  */
 int main(void)
 {
