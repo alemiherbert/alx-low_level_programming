@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+
+/**
+ * main - the entry point into the program.
+ * this program prints the sizes of different types onto the screen
+ * Return: int, 0 for success
+ */
+int main(void)
+{
+	printf("Size of a char: %i byte(s)\n", sizeof(char));
+	printf("Size of an int: %i byte(s)\n", sizeof(int));
+	printf("Size of a long int: %i byte(s)\n", sizeof(int));
+	printf("Size of a long long int: %i byte(s)\n", sizeof(long));
+	printf("Size of a float: %i byte(s)", sizeof(float));
+	return (0);
+}
