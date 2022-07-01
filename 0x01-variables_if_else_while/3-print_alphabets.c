@@ -20,5 +20,6 @@ int main(void)
 		putchar(C);
 		C++;
 	}
+	putchar(10);
 	return (0);
 }
