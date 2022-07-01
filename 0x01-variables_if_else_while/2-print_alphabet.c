@@ -5,7 +5,7 @@
  * main - entry point into the program
  * Return: 0 for success
  */
-int main (void)
+int main(void)
 {
 	int c = 97;
 
