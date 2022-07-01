@@ -4,12 +4,14 @@
 
 /**
  * main - entry point  into the program
- * Description: asign a random variable to a number n 
+ * Description: asign a random variable to a number n
  * and print wether the number is positive or negative
- * Return: 0 for success */
+ * Return: 0 for success 
+ */
 int main(void)
 {
 	int n;
+
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 
@@ -17,10 +19,10 @@ int main(void)
 	if (n > 0)
 	{
 		printf("%d is positive\n", n);
-	}else if (n == 0)
+	} else if (n == 0)
 	{
 		printf("%d is zero\n", n);
-	}else
+	} else
 	{
 		printf("%d is negative\n", n);
 	}
