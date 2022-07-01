@@ -6,7 +6,7 @@
  * main - entry point  into the program
  * Description: asign a random variable to a number n
  * and print wether the number is positive or negative
- * Return: 0 for success 
+ * Return: 0 for success
  */
 int main(void)
 {
