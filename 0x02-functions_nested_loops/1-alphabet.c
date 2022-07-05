@@ -5,17 +5,8 @@
  *
  * Return: void
  */
-void print_alphabet(void)
-{
-	int i = 97;
-	while (i <= 122)
-	{
-		_putchar(i);
-		i++;
-	}
-	_putchar(10);
-	return;
-}	
+void print_alphabet(void);
+
 /**
  * main - check the code
  *
@@ -27,3 +18,14 @@ int main(void)
 	return (0);
 }
 
+void print_alphabet(void)
+{
+        int i = 97;
+        while (i <= 122)
+        {
+                _putchar(i);
+                i++;
+        }
+        _putchar(10);
+        return;
+}
