@@ -1,6 +1,6 @@
 #include "main.h"
 
-void print_alpbhabet_x10(void);
+void print_alpbhabet_x10(void)
 {
 	int i;
 	char c;
