@@ -1,5 +1,6 @@
 #include "main.h"
 
+void print_aphabet(void);
 /**
  * print_alphabet - prints all the lowercase letterd of the alphabet
  *
