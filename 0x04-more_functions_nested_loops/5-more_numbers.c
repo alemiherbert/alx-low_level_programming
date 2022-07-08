@@ -1,22 +1,19 @@
 #include "main.h"
-
-
 /**
- * print_numbers - print the numbers 10 times
- *
- * Return: Nothing
- */
-void print_numbers(void)
+*print_most_numbers - prints numbers except 2 and 4
+*
+*Return: returns nothing
+*/
+void print_most_numbers(void)
 {
-	int a, b;
-	for (a = 0; a < 10; a++)
-	{
-		for (b = 0; b < 15;b++)
-		{
-			_printchar(b);
-		}
-
-		_putchar('\n');
-	}
-	_putchar('\n');
+int number;
+for (number = 48; number < 58; number++)
+{
+if ((number == 50) || (number == 52))
+{
+continue;
+}
+_putchar(number);
+}
+_putchar(10);
 }
