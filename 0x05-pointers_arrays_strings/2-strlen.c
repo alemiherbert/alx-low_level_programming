@@ -2,17 +2,16 @@
 
 /**
  * _strlen -get the length of a string
- * @s - a character array
+ * @s: a character array
  * Return: length of the string
  */
 int _strlen(char *s)
 {
-	int i;
-	
+	int i = 0;	
 	while (*s != '\0')
 	{
 		i++;
 		s++;
 	}
-	return (0);
+	return (i);
 }
