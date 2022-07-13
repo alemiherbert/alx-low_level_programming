@@ -15,9 +15,16 @@ void rev_string(char *str)
 		++i;
 	}
 	i--;
-	while (i >= 0)
+	int j;
+	char k;
+
+	j = 0;
+	while (j < i)
 	{
-		_putchar(*(str + i));
-		--i;
+		k = s[i];
+		s[i] = s[j];
+		s[j] = k;
+		j++;
+		i--;		
 	}
 }
