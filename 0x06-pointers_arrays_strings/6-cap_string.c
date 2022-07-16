@@ -2,41 +2,6 @@
 
 /**
  * cap_string - function that capitalizes all words of a string.
- * @s: Pointer to char
- * Return: char.
- */
-
-char *cap_string(char *s)
-{
-	int i = 0;
-
-	while (*(s + i) != '\0')
-	{
-		if (i == 0 && (*(s + i) >= 97 && *(s + i) <= 122))
-		{
-			*(s + i) = *(s + i) - ' ';
-			i++;
-		}
-		if (*(s + i) == ' ' || *(s + i) == '\n' || *(s + i) == '\t'
-		    || *(s + i) == ',' || *(s + i) == ';' || *(s + i) == '!'
-		    || *(s + i) == '?' || *(s + i) == '"' || *(s + i) == '('
-		    || *(s + i) == ')' || *(s + i) == '{' || *(s + i) == '}'
-		    || *(s + i) == '.')
-		{
-			i++;
-			if (*(s + i) >= 97 && *(s + i) <= 122)
-			{
-				*(s + i) = *(s + i) - 32;
-			}
-		}
-		else
-			i++;
-	}
-	return (s);
-#include "main.h"
-
-/**
- * cap_string - function that capitalizes all words of a string.
  * @s: Pointer to Char
  * Return: char.
  */
@@ -68,4 +33,4 @@ char *cap_string(char *s)
 			i++;
 	}
 	return (s);
-}}
+}
