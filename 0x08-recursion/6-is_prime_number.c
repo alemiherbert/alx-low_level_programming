@@ -1,30 +1,32 @@
 #include "main.h"
 
-
 /**
- * chk_prime - checks wether prime or not
- * @a: number to check
- * @i: qualifier
+ * chk_prime - function that gets if num is 0 or 1
+ *
+ * @num: input number
+ * @i: Counter variable
  * Return: int
  */
-int chk_prime(int a, int i)
+
+int chk_prime(int num, int i)
 {
-	if (a == i)
-		return (i);
-	if (a % i == 0)
+	if (num == i)
+		return (1);
+	if (num % i == 0)
 		return (0);
-	return (chk_prime(a, i + 1));
+	return (chk_prime(num, i + 1));
 }
 
 /**
- * is_prime_number - showcase result
- * @n: input
- * Return: 1 if prime else 0
+ * is_prime_number - verify primeness
+ * @n: input number
+ *
+ * Return: int 1 if prime, 0 if not
  */
+
 int is_prime_number(int n)
 {
 	if (n <= 1)
 		return (0);
-	/* start at 2 */
 	return (chk_prime(n, 2));
 }
