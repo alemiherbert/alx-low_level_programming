@@ -7,20 +7,20 @@
  */
 int main(void)
 {
-	char i, j, k;
+	int i, j, k;
 
-	for (i = '0'; i <= '9'; i++)
+	for (i = 48; i <= 57; i++)
 	{
-		for (j = '0'; j <= '9'; j++)
+		for (j = 48; j <= 57; j++)
 		{
-			for (k = '0'; k <= '9'; k++)
+			for (k = 48; k <= 57; k++)
 			{
 				if (i < j && j < k)
 				{
 					putchar(i);
 					putchar(j);
 					putchar(k);
-					if (!(i == '7' && j == '8' && k == '9'))
+					if (!(i == 55 && j == 56 && k == 57))
 					{
 						putchar(',');
 						putchar(' ');
