@@ -22,7 +22,7 @@ void times_table(void)
 			_putchar(' ');
 
 			if (res < 10)
-				_putchar(' '); 
+				_putchar(' ');
 			else
 				_putchar((res / 10) + '0');
 			_putchar((res % 10) + '0');
@@ -30,9 +30,4 @@ void times_table(void)
 		_putchar('\n');
 	}
 
-}
-int main()
-{
-times_table();
-return 0;
 }
