@@ -6,7 +6,7 @@
  * @b: the second number
  *
  * Description: this function adds two numbers
- * Return: nothing
+ * Return: the sum
  */
 int add(int a, int b)
 {
