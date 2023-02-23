@@ -3,6 +3,7 @@
 /**
  * print_line - draw a line in the terminal
  * Description: >_<
+ * @n: length of line
  *
  * Return: nothing
  */
