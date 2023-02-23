@@ -2,10 +2,11 @@
 
 /**
  * mul - multiply two numbers together
+ * Description: (^_^)
  * @a: the first number
  * @b: the second number
  *
- * Result: the product
+ * Return: the product
  */
 int mul(int a, int b)
 {
