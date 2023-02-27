@@ -4,6 +4,7 @@
 /**
  * print_array - this function prints an array of integers
  *
+ * @a: the array
  * @n: the length of the array
  *
  * Return: nothing
