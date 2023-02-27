@@ -5,7 +5,7 @@
  * and updates its value to 98
  * Description: It's all up there
  *
- * @n the pointer to the int
+ * @n: the pointer to the int
  * Return: nothing
  */
 void reset_to_98(int *n)
