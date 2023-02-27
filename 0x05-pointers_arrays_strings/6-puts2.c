@@ -7,7 +7,7 @@
  *
  * Return: 0 if all goes well
  */
-void _puts2(char *str)
+void _puts2(char *s)
 {
 	int i;
 
