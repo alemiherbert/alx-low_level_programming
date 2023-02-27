@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
- * _puts2 - a function that prints every other character of a string to stdout
+ * puts2 - a function that prints every other character of a string to stdout
  *
  * @s: the string to print
  *
  * Return: 0 if all goes well
  */
-void _puts2(char *s)
+void puts2(char *s)
 {
 	int i;
 
