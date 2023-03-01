@@ -12,7 +12,7 @@
 char *_strncat(char *dest, char *src, int n)
 {
 	char *output = dest;
-	unsigned int i;
+	int i;
 
 	/* move the pointer to dest to the last character */
 	while (*dest != '\0')
