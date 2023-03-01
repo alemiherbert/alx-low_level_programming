@@ -19,12 +19,11 @@ char *_strncat(char *dest, char *src, int n)
 		dest++;
 
 	/* copy every character on src to dest */
-	while (i < n)
+	for (i = 0; i < n && *src != '\0'; i++)
 	{
 		*dest = *src;
 		dest++;
 		src++;
-		i++;
 	}
 
 	/* append the null character */
