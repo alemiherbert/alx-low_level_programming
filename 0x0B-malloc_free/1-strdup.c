@@ -14,8 +14,11 @@ char *_strdup(char *str)
 	if (str == NULL)
 		return (NULL);
 
-	for (i = 0; str[i] != '\0'; i++);
-	result = malloc(i);
+	for (i = 0; str[i] != '\0'; i++)
+		;
+
+	/* Extra byte is for null terminator */
+	result = malloc(i + 1);
 	if (!result)
 		return (NULL);
 
