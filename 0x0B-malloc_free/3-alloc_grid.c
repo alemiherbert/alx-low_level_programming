@@ -2,7 +2,6 @@
 
 /**
  * alloc_grid - initialise each element of a 2-dimensional grid with 0s
- * @grid: the grid
  * @width: the width of the grid
  * @height: the height of the grid
  * Return: the grid, or NULL
@@ -20,6 +19,13 @@ int **alloc_grid(int width, int height)
 	for (i = 0; i < height; i++)
 	{
 		grid[i] = malloc(width * sizeof(int));
+		if (!grid[i])
+		{
+			while (i--)
+				free(grid[i]);
+			free(grid);
+			return (NULL);
+		}
 		for (j = 0; j < width; j++)
 			grid[i][j] = 0;
 	}
