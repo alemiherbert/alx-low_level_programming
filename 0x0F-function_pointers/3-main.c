@@ -19,7 +19,7 @@ int main(int argc, char **argv)
 
 	n1 = atoi(argv[1]);
 	n2 = atoi(argv[3]);
-	opr= argv[2];
+	opr = argv[2];
 
 	if (get_op_func(opr) == NULL || opr[1] != '\0')
 	{
@@ -27,7 +27,7 @@ int main(int argc, char **argv)
 		exit(99);
 	}
 
-	if ((*opr== 47 || * opr== 37) && n2 == 0)
+	if ((*opr == 47 || *opr == 37) && n2 == 0)
 	{
 		printf("Error\n");
 		exit(100);
