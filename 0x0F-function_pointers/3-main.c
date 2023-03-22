@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
 #include "3-calc.h"
 
 /**
@@ -8,35 +7,30 @@
  */
 int main(int argc, char **argv)
 {
-int num1, num2;
-	char *operator;
+	int n1, n2;
+	char *opr;
 
-	/* Error if arguments are not 4 with the executable */
 	if (argc != 4)
 	{
-		printf("Error\n");
-		exit(98);
+		puts("Error");
+		return (1);
 	}
 
-	num1 = atoi(argv[1]); /*if argument is string convert to number*/
-	num2 = atoi(argv[3]); /* as stated above */
-	operator = argv[2];
+	n1 = atoi(argv[1]);
+	n2 = atoi(argv[3]);
+	opr = argv[2];
 
-	/* Error if operator is not null or a 2d array '\*' */
-	if (get_op_func(operator) == NULL || operator[1] != '\0')
+	if (!get_op_func(opr) || *(opr + 1))
 	{
-		printf("Error\n");
-		exit(99);
+		puts("Error");
+		return (1);
 	}
 
-	/* Error if user tries to divide / (47) or % (37) by 0*/
-	if ((*operator == 47 || *operator == 37) && num2 == 0)
+	if (*opr == '/' || *opr == '%')
 	{
-		printf("Error\n");
-		exit(100);
+		puts("Error");
+		return (1);
 	}
-
-	printf("%d\n", get_op_func(operator)(num1, num2));
-
+	printf("%d\n", get_op_func(opr)(n1, n2));
 	return (0);
 }
