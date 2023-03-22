@@ -19,17 +19,8 @@ int main(int argc, char **argv)
 	n2 = atoi(argv[3]);
 	opr = argv[2];
 
-	if ((*opr == '/' || *opr == '%') && n2 == 0)
-	{
-		puts("Error");
-		return (EXIT_FAILURE);
-	}
 	fn = get_op_func(opr);
-	if (!fn || *(opr + 1))
-	{
-		puts("Error");
-		return (EXIT_FAILURE);
-	}
+
 	result = fn(n1, n2);
 	printf("%d\n", result);
 	return (EXIT_SUCCESS);
