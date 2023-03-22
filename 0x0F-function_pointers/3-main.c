@@ -18,8 +18,13 @@ int main(int argc, char **argv)
 	n1 = atoi(argv[1]);
 	n2 = atoi(argv[3]);
 	opr = argv[2];
-	fn = get_op_func(opr);
 
+	if (*opr == '/' && n2 == 0)
+	{
+		puts("Error");
+		return (EXIT_FAILURE);
+	}
+	fn = get_op_func(opr);
 	if (!fn)
 	{
 		puts("Error");
