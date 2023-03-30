@@ -5,7 +5,7 @@
  * add_node - add a new node at the beginning of a linked list
  * @head: pointer to the first node
  * @str: malloc'd string
- * 
+ *
  * Return: a pointer to the list
 */
 list_t *add_node(list_t **head, const char *str)
