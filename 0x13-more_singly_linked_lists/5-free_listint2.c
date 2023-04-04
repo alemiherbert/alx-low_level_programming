@@ -7,13 +7,14 @@
 */
 void free_listint2(listint_t **head)
 {
-	listint_t *aux;
+	listint_t *aux, *aux2;
 
-	while ((aux = *head))
+	/* let's try to avoid moving the head pointer */
+	aux2 = *head;
+	while ((aux = aux2))
 	{
-		*head = (*head)->next;
+		aux2 = aux2->next;
 		free(aux);
 	}
 	*head = NULL;
-	head = NULL;
 }
