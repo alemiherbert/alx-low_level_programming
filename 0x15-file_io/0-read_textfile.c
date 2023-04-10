@@ -18,8 +18,6 @@ ssize_t read_textfile(const char *filename, size_t letters)
     
     /* Write contents from buffer to stdout */
     write(1, buf, len);
-    putchar('\n');
-    len++;
     free(buf);
     
     return (len);
