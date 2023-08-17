@@ -3,7 +3,8 @@
 /**
  * print_dlistint - print all the elements in a dlistint
  * @h: pointer to the list
- * Return: the number of nodes */
+ * Return: the number of nodes
+ */
 size_t print_dlistint(const dlistint_t *h)
 {
 	size_t num;
