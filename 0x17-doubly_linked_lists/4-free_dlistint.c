@@ -5,7 +5,7 @@
  * free_dlistint - free a doubly linked list
  * @head: pointer to the first element
  */
-void free_dlistint(dlistint *head)
+void free_dlistint(dlistint_t *head)
 {
     dlistint_t *tmp;
 
