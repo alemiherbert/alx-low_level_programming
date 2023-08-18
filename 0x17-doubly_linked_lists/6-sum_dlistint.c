@@ -2,14 +2,14 @@
 
 /**
  * sum_dlistint - sum the elements in a dlistint
- * @h: pointer to the list
+ * @head: pointer to the list
  * Return: the number of nodes
  */
 int sum_dlistint(dlistint_t *head)
 {
-    int sum;
+	int sum;
 
-    for (sum = 0; head != NULL; head = head->next)
-        sum += head->n;
-    return (sum);
+	for (sum = 0; head != NULL; head = head->next)
+		sum += head->n;
+	return (sum);
 }
